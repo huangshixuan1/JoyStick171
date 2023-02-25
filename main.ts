@@ -14,6 +14,10 @@ basic.forever(function () {
         radio.sendNumber(6)
     } else if (KSB045.getJoystickValue(KSB045.valueType.Y) > 520 && KSB045.getJoystickValue(KSB045.valueType.X) >= 400 && KSB045.getJoystickValue(KSB045.valueType.X) < 600) {
         radio.sendNumber(2)
+    } else if (KSB045.getBtnValue(KSB045.btnName.E)) {
+        radio.sendNumber(1)
+    } else if (KSB045.getBtnValue(KSB045.btnName.C)) {
+        radio.sendNumber(3)
     } else {
         radio.sendNumber(0)
     }
