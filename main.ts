@@ -8,7 +8,7 @@ KSB045.onBtnChanged(KSB045.btnName.F, KSB045.pushType.down, function () {
     basic.pause(50)
     basic.clearScreen()
 })
-radio.setGroup(172)
+radio.setGroup(171)
 basic.forever(function () {
     if (KSB045.getJoystickValue(KSB045.valueType.X) < 500 && KSB045.getJoystickValue(KSB045.valueType.Y) >= 400 && KSB045.getJoystickValue(KSB045.valueType.Y) < 600) {
         radio.sendNumber(4)
